@@ -29,12 +29,25 @@ function cargarImagenes(event) {
 
 function pintarGaleria(pListaImagenes) {
 
-    var contenido = "";
-    for (imagen of pListaImagenes) {
 
-        console.log(imagen)
-        contenido += `<div><img src="${imagen.thumbnailUrl}" alt=""></div>`
+    var menu = pListaImagenes.slice(0, 54)
+
+    var galeriaMenu = menu[0].thumbnailUrl
+
+    console.log(galeriaMenu)
+
+    for (i = 0; i < menu.length; i++) {
+
+        console.log(i)
+        galeriaMenu += `<div><img src="${menu[i].thumbnailUrl}" alt=""></div>`
     }
 
-    //seccionGaleria.innerHTML += contenido;
+
+
+
+
+    seccionGaleria.innerHTML += galeriaMenu;
+
 }
+
+

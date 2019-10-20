@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    width: auto;
+    height: 100px;
+    text-align: center;
+    background-color: burlywood;
+    padding: 20px;
+}
+
+.contenedor{
+    max-width: 1200px;
+    height: 1600px;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+div #menu{
+
+background-color: aquamarine;
+text-decoration: none;
+float: left;
+width: 200px;
+height: 1500px;
+
+}
+
+#menu header nav ul li{
+
+    
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#galeria div{
+
+    float: left;
+    padding: 5px;
+    margin-left: 6px;
+    margin-top: 3px;
+
+}

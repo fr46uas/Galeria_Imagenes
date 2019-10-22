@@ -30,24 +30,27 @@ function cargarImagenes(event) {
 function pintarGaleria(pListaImagenes) {
 
 
-    var menu = pListaImagenes.slice(0, 54)
+    var menu = pListaImagenes.slice(1, 54)
 
     var galeriaMenu = menu[0].thumbnailUrl
 
-    console.log(galeriaMenu)
+    //console.log(galeriaMenu)
 
-    for (i = 0; i < menu.length; i++) {
+    for (i = 1; i < menu.length; i++) {
 
-        console.log(i)
+
         galeriaMenu += `<div><img src="${menu[i].thumbnailUrl}" alt=""></div>`
     }
-
-
-
-
 
     seccionGaleria.innerHTML += galeriaMenu;
 
 }
+
+
+
+
+
+
+
 
 
